@@ -34,15 +34,15 @@ def test(this, a, b,c):
         this.count = 0
     print(a,b,c, this.count)
     
-test("hi", "hello", "goodbye")
-test("hi", "hello", "goodbye")
-test("hi", "hello", "goodbye")
+test("hi", "hello", "goodbye") # hi hello goodbye 0
+test("hi", "hello", "goodbye") # hi hello goodbye 1
+test("hi", "hello", "goodbye") # hi hello goodbye 2
 
 @state_func_e({"count":0})
 def test2(this, a, b,c):
-    this.count += 1 
     print(a,b,c, this.count)
+    this.count += 1 
     
-test2("hi", "hello", "goodbye")
-test2("hi", "hello", "goodbye")
-test2("hi", "hello", "goodbye")
+test2("hi", "hello", "goodbye") # hi hello goodbye 0
+test2("hi", "hello", "goodbye") # hi hello goodbye 1
+test2("hi", "hello", "goodbye") # hi hello goodbye 2
